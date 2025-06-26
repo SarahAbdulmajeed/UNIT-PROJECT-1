@@ -1,0 +1,17 @@
+[
+    {
+      "question": "What is a class in object-oriented programming?",
+      "keywords": ["blueprint", "object", "structure"],
+      "ideal_answer": "A class is a blueprint for creating objects. It defines a set of attributes and methods that the created objects will have."
+    },
+    {
+      "question": "Can you explain inheritance in OOP?",
+      "keywords": ["inherit", "parent", "child", "reuse"],
+      "ideal_answer": "Inheritance allows a class (child) to inherit properties and behaviors (methods) from another class (parent), promoting code reuse."
+    },
+    {
+      "question": "What is encapsulation?",
+      "keywords": ["hide", "access", "private", "control"],
+      "ideal_answer": "Encapsulation is the concept of restricting direct access to some of an object's components, which means internal object details are hidden from the outside world."
+    }
+  ]  
