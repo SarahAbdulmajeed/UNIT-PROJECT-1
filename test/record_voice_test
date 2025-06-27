@@ -1,0 +1,26 @@
+"""PyAudio Example: Record a few seconds of audio and save to a wave file. https://people.csail.mit.edu/hubert/pyaudio/"""
+import wave #Built in module 
+import sys
+import pyaudio
+
+CHUNK = 1024
+FORMAT = pyaudio.paInt16
+CHANNELS = 1 if sys.platform == 'darwin' else 2
+RATE = 44100 #hz
+RECORD_SECONDS = 5
+
+with wave.open('test/output.wav', 'wb') as obj: # wb: writing binary
+    p = pyaudio.PyAudio()
+    obj.setnchannels(CHANNELS)
+    obj.setsampwidth(p.get_sample_size(FORMAT))
+    obj.setframerate(RATE)
+
+    stream = p.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True)
+
+    print('Recording...')
+    for _ in range(0, RATE // CHUNK * RECORD_SECONDS):
+        obj.writeframes(stream.read(CHUNK))
+    print('Done')
+
+    stream.close()
+    p.terminate()
