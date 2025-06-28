@@ -40,7 +40,7 @@ while True:
         case "5":
             print("...")
         case "6":
-            print(Fore.YELLOW + "👋 Goodbye! Come back stronger!")
+            print(Fore.YELLOW + "Goodbye! Come back stronger! 👋")
             break
         case _:
             print(Fore.RED + "Invalid option!")
