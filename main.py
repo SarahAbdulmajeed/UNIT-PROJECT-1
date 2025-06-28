@@ -1,10 +1,33 @@
-import json
 import inquirer
 from colorama import init, Fore
+from user_auth import login, signup
+
 
 init(autoreset=True)  # active colors 
+print("Hello, Welcome")
 
-def show_main_menu():
+
+# ========== Main Menu =============
+while True:
+    login_options_list= [inquirer.List("choice",
+                message="Please select an option:",
+                choices=[
+                    "1. Login",
+                    "2. Signup",
+                ])]
+    user_answer1 = inquirer.prompt(login_options_list)
+    user_choice1 = user_answer1["choice"][0]
+    match user_choice1:
+        case "1":
+            login()
+        case "2":
+            signup()                            
+        case _:
+            print("Invalid option!")
+
+# ==================================
+
+"""def show_main_menu():
     print(Fore.GREEN + f"📋 Main Menu 📋")
     main_menu_list:list = [
         inquirer.List(
@@ -22,8 +45,8 @@ def show_main_menu():
     ]
     main_menu_choice = inquirer.prompt(main_menu_list)
     return main_menu_choice["choice"][0]
-
-print(Fore.CYAN + "🎤 Welcome to InterviewBot! 🎤")
+"""
+"""print(Fore.CYAN + "🎤 Welcome to InterviewBot! 🎤")
 name:str = input("Please enter your name: ").strip()
 while True:
     
@@ -43,4 +66,4 @@ while True:
             print(Fore.YELLOW + "Goodbye! Come back stronger! 👋")
             break
         case _:
-            print(Fore.RED + "Invalid option!")
+            print(Fore.RED + "Invalid option!")"""
