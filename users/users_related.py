@@ -1,7 +1,7 @@
 import json
 import os 
 
-USERS_FILE:str = "users.json"
+USERS_FILE:str = "users/users.json"
 
 def default_admin():
     default_admin = [{
@@ -17,7 +17,7 @@ def default_admin():
 def load_users():
     if not os.path.exists(USERS_FILE):
         default_admin()
-    with open('users.json', 'r', encoding="UTF-8") as file:
+    with open(USERS_FILE, 'r', encoding="UTF-8") as file:
         return json.load(file) #Decode
         
 

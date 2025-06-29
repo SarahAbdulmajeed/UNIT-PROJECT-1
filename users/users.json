@@ -10,5 +10,11 @@
     "username": "sarah",
     "password": "sa",
     "type": "user"
+  },
+  {
+    "name": "s",
+    "username": "s",
+    "password": "s",
+    "type": "user"
   }
 ]
