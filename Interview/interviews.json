@@ -1,0 +1,67 @@
+{
+  "SarahSai": [
+    {
+      "datetime": "2025-07-02 11:27:59",
+      "jobtitle": "AI Developer",
+      "questions": [
+        {
+          "question": "Can you explain your experience with machine learning algorithms and how you have used them in your past projects?",
+          "Answer": " Sorry, I don't have any experience.",
+          "skills": [
+            "Machine Learning",
+            "Algorithm Development",
+            "Problem-Solving",
+            "Project Management"
+          ],
+          "strengths": [
+            "Answer was clear and direct"
+          ],
+          "weaknesses": [
+            "Lack of experience with machine learning algorithms",
+            "Did not provide any relevant past projects"
+          ],
+          "score": 1
+        },
+        {
+          "question": "How do you approach data cleaning and preprocessing before feeding it into an AI model?",
+          "Answer": "",
+          "skills": [
+            "Data Cleaning",
+            "Data Preprocessing",
+            "Data Analysis",
+            "Critical Thinking"
+          ],
+          "strengths": "",
+          "weaknesses": "",
+          "score": ""
+        },
+        {
+          "question": "Can you describe a time when you used AI to solve a complex problem, and what was the outcome?",
+          "Answer": "",
+          "skills": [
+            "Problem-Solving",
+            "AI Development",
+            "Communication",
+            "Strategic Planning"
+          ],
+          "strengths": "",
+          "weaknesses": "",
+          "score": ""
+        },
+        {
+          "question": "How do you ensure ethical considerations are met when developing AI solutions?",
+          "Answer": "",
+          "skills": [
+            "Ethics in AI",
+            "Risk Management",
+            "Policy Understanding",
+            "Critical Thinking"
+          ],
+          "strengths": "",
+          "weaknesses": "",
+          "score": ""
+        }
+      ]
+    }
+  ]
+}
